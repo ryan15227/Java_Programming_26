@@ -57,4 +57,19 @@ public class MethodsWithOthers {
 
     }
 
+    public static int firstEvenNumber(int [] nums){
+        for(int num: nums){
+            if(num % 2 == 0){
+                return num;
+            }
+        }
+        return 0;
+    }
+
+    public static  void main(String[] args) {
+
+        int [] arr = {5, 1, 4, 12, 5};
+        System.out.println(firstEvenNumber(arr));
+
+    }
 }
