@@ -9,5 +9,9 @@ public class UsingStringUtil {
 
         System.out.println(StringUtil.fixFormat("jaMES"));
 
+        System.out.println(StringUtil.frequencyOfCharacter("apple", 'p'));
+
+        System.out.println(StringUtil.uniqueCharacters("apple"));
+
     }
 }
