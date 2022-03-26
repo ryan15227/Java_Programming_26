@@ -23,4 +23,12 @@ public class Picture {
 //        System.out.println("drawing with size " + length);
 //    }
 
+    public static void draw(int size, String color){
+
+    }
+
+    public static void draw(String color, int size){
+        System.out.println("color with size");
+    }
+
 }
