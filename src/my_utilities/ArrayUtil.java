@@ -76,5 +76,24 @@ created a method that will accept an int array and return the smallest number fr
         }
 
         return -1;
+
+
+    }
+    public static int [] addElement(int [] original, int [] elementsToAdd) {
+
+        int[] newArray = new int[original.length + elementsToAdd.length];
+
+        for (int i = 0, j = 0; i < newArray.length; i++) {
+
+            if (i < original.length) {
+                // added the elements from the original array in the new array
+                newArray[i] = original[i];
+            } else {
+                // added the new elements to the new array
+                newArray[i] = elementsToAdd[j++];
+            }
+        }
+
+        return newArray;
     }
 }
